@@ -68,6 +68,8 @@ $r = json_decode($results);
 <html>
   <head>
     <title>CatCam</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" />
 <style>
 body {
   font-family: Tahoma, Helvetica;
@@ -76,7 +78,7 @@ h1 {
   font-size: 18pt;
 }
 pre {
-  font-family: Consolas, Monaco, Fixed-Width;
+  font-family: "Ubuntu Mono", Consolas, Monaco, Fixed-Width;
 }
 a {
   color: blue;
