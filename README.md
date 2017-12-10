@@ -27,7 +27,7 @@ file's properties, which, umm.. no.
    to create an app and get a token. To protect my other Dropbox data, I
    chose to use the kind of app that's restricted to a single folder.
 
-1. After downloading or cloning this repo, follow the config template to create
+1. After downloading or cloning this repo, use the config template to create
    a `config/catcfg.inc` file with the Dropbox app name and token. For example:
 
    ```php
