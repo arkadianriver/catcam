@@ -12,8 +12,6 @@ function print_row($app, $file, $size, $path) {
      . '"post" action="catget.php" class="inline"><input type="hidden" name='
      . '"size" value="'. $size .'"/><button type="submit" name="file" class='
      . '"link-button" value="'. $path .'">⭳</button></form>'."\n";
-
-EOL;
 }
 
 // make size human-readable. ugly impl, but fastest
