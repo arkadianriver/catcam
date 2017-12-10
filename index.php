@@ -119,17 +119,14 @@ a:visited {
         $ttl += $entry->size;
         print_row($c['app'], $entry->name, $entry->size, $entry->path_lower);
       }
-      echo "</pre>";
-      if ($r->has_more) { // if set, there's another page of data
-        echo <<<EOM
-
-        <form method="post" action="index.php" class="inline">
-          <button type="submit" name="cursor" value="{$r->cursor}"
-          >...and there's more.</button>
-        </form>
-EOM;
-      }
       ?>
+    </pre>
+    <?php if ($r->has_more): // if set, there's another page of data ?>
+    <form method="post" action="index.php" class="inline">
+      <button type="submit" name="cursor" value="<?php echo $r->cursor; ?>"
+      >...and there's more.</button>
+    </form>
+    <?php endif; ?>
     <p>Total size on page: <?php echo _sizefmt($ttl); ?></p>
     <p><a href="https://www.dropbox.com/home/Apps/<?php echo $c['app']; ?>"
         target="_blank"><button id="godropdir" type="button"
